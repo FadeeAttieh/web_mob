@@ -1,0 +1,196 @@
+Company Website Design for Web, Mobile, and Branding Services
+
+---
+
+Features & Sections
+
+1. Homepage
+   - Animated hero section (React, GSAP, Framer Motion)
+   - Clear value proposition
+   - Quick links to services and portfolio
+
+2. Services
+   - Dedicated pages for Websites, Web Apps, Mobile Apps, Branding
+   - Interactive service cards (hover effects, micro-interactions)
+   - Tech stack highlights (React, Next.js, Vue, Flutter, Figma, etc.)
+
+3. Portfolio/Case Studies
+   - Filterable gallery (by tech, industry, service)
+   - Project details: challenges, solutions, results, tech used
+   - Video demos, client testimonials
+
+4. About Us
+   - Team bios with photos
+   - Company timeline (animated, scroll-based)
+   - Certifications, awards
+
+5. Contact
+   - Dynamic contact form (validation, spam protection)
+   - Map integration (Google Maps, Mapbox)
+   - Social media links
+
+6. Blog/Insights
+   - SEO-optimized articles (Next.js, MDX, headless CMS like Sanity or Strapi)
+   - Categories/tags, search functionality
+   - Newsletter signup
+
+7. Careers
+   - Job listings, application form
+   - Company culture highlights
+
+8. FAQ
+   - Accordion-style Q&A
+
+9. Request a Quote
+   - Multi-step form, file upload
+
+---
+
+Modern Technologies
+
+- Frontend: React, Next.js, Vue, Svelte, Tailwind CSS, Chakra UI, TypeScript
+- Backend: Node.js, Express, serverless (Vercel, Netlify Functions), headless CMS (Sanity, Strapi, Contentful)
+- Mobile: React Native, Flutter
+- DevOps: Docker, CI/CD pipelines (GitHub Actions, GitLab CI), automated testing (Jest, Cypress)
+- Analytics & Tracking: Google Analytics, Plausible, Hotjar
+
+---
+
+SEO Best Practices
+
+- Technical SEO: Fast load times, mobile-first design, semantic HTML, ARIA roles, XML sitemap, robots.txt
+- On-Page SEO: Unique meta titles/descriptions, structured data (JSON-LD), optimized headings, alt text for images
+- Content SEO: Blog with keyword-rich content, internal linking, schema markup for reviews, articles, products
+- Performance: CDN for assets, lazy loading, minified CSS/JS
+
+---
+
+Design Trends
+
+- Dark/light mode toggle
+- Animated transitions
+- Glassmorphism, neumorphism, gradients
+- Accessibility-first design
+
+---
+
+A site built with these features, technologies, and SEO practices will look modern, perform well, and
+
+---
+
+## Project Skeleton & Setup
+
+### 1. Tech Stack
+
+- **Frontend:** Next.js (React framework)
+- **Styling:** Tailwind CSS
+- **TypeScript:** For type safety
+- **CMS:** Headless CMS (e.g., Sanity or Strapi, optional for dynamic content)
+- **Forms:** React Hook Form, validation with Zod
+- **Testing:** Jest, React Testing Library
+- **Linting:** ESLint, Prettier
+
+---
+
+### 2. Folder Structure
+
+```
+/workspaces/web_mob/
+├── public/
+│   └── design.txt
+├── src/
+│   ├── pages/           # Next.js routes
+│   │   ├── index.tsx    # Homepage
+│   │   ├── services.tsx
+│   │   ├── portfolio.tsx
+│   │   ├── about.tsx
+│   │   ├── contact.tsx
+│   │   ├── blog.tsx
+│   │   ├── careers.tsx
+│   │   ├── faq.tsx
+│   │   ├── quote.tsx
+│   ├── components/      # Reusable UI components
+│   ├── styles/          # Tailwind config, global styles
+│   ├── lib/             # Utility functions, API clients
+│   ├── controllers/     # (Optional) For server-side logic
+│   └── hooks/           # Custom React hooks
+├── .env                 # Environment variables
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+### 3. Required Packages
+
+Install these prerequisites:
+
+```bash
+# Next.js, React, TypeScript, Tailwind CSS
+npm install next react react-dom typescript tailwindcss postcss autoprefixer
+
+# Linting & Formatting
+npm install --save-dev eslint prettier
+
+# Forms & Validation
+npm install react-hook-form zod
+
+# Testing
+npm install --save-dev jest @testing-library/react @testing-library/jest-dom
+
+# Headless CMS Client (optional, e.g., Sanity)
+npm install @sanity/client
+
+# For animated UI (optional)
+npm install framer-motion
+```
+
+---
+
+### 4. Routing
+
+- Each page in `src/pages/` is a route (Next.js file-based routing).
+- Example routes:
+  - `/` → Homepage
+  - `/services` → Services
+  - `/portfolio` → Portfolio/Case Studies
+  - `/about` → About Us
+  - `/contact` → Contact
+  - `/blog` → Blog/Insights
+  - `/careers` → Careers
+  - `/faq` → FAQ
+  - `/quote` → Request a Quote
+
+---
+
+### 5. Controllers
+
+- For static sites, controllers are not required.
+- If using API routes (e.g., for forms, CMS integration), add files in `src/pages/api/`.
+- Example: `src/pages/api/contact.ts` for handling contact form submissions.
+
+---
+
+### 6. Styles
+
+- Tailwind CSS for utility-first styling.
+- Global styles in `src/styles/globals.css`.
+- Custom themes (dark/light mode) via Tailwind config.
+
+---
+
+### 7. Next Steps
+
+1. Initialize Next.js project with TypeScript and Tailwind CSS.
+2. Scaffold pages and components as per folder structure.
+3. Set up routing and navigation.
+4. Integrate forms and validation.
+5. Connect to CMS if dynamic content is needed.
+6. Add SEO tags and accessibility features.
+7. Write tests for critical components.
+
+---
+
+This skeleton provides a scalable, modern foundation for your company website,
