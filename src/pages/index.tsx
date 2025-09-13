@@ -43,52 +43,36 @@ export default function Home() {
         <section
           id="hero"
           ref={heroRef}
-          className="min-h-screen flex flex-col justify-center items-center"
-          style={{
-            backgroundImage: "url('/hero-bg.jpg')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center 0px",
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+          className="min-h-screen w-full flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat sm:px-4 md:px-8 lg:px-16"
+          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
         >
-          <div className="bg-white bg-opacity-80 p-8 rounded shadow-lg flex flex-col items-center mx-auto text-center responsive-container">
-            <img src="/hero-fg.jpg" alt="WebMob Hero" className="w-32 h-32 rounded-full mb-6 shadow-lg block mx-auto" />
-            <h1 className="heading-main font-bold mb-4">We Build Websites, Apps & Brands</h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto">
-              Modern solutions for your business. Fast, scalable, and beautiful digital products.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a href="#services" className="btn">Our Services</a>
-              <a href="#portfolio" className="btn">Portfolio</a>
-              <a href="#about" className="btn">About Us</a>
-            </div>
+          <div className="bg-white bg-opacity-80 p-6 sm:p-8 rounded shadow-lg flex flex-col items-center mx-auto text-center responsive-container max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
+            <img src="/hero-fg.jpg" alt="WebMob Hero" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 sm:mb-6 shadow-lg block mx-auto" />
+            <h1 className="heading-main font-bold mb-2 sm:mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl">We Build Websites, Apps & Brands</h1>
+            {/* Additional hero content goes here */}
           </div>
         </section>
-        <section id="services" className="py-20 bg-white flex justify-center w-full">
+        <section id="services" className="py-12 sm:py-20 bg-white flex justify-center w-full">
           <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <ServicesSection />
           </div>
         </section>
-        <section id="portfolio" className="py-20 bg-gray-50 flex justify-center w-full">
+        <section id="portfolio" className="py-12 sm:py-20 bg-gray-50 flex justify-center w-full">
           <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <PortfolioSection />
           </div>
         </section>
-        <section id="about" className="py-20 bg-white flex justify-center w-full">
+        <section id="about" className="py-12 sm:py-20 bg-white flex justify-center w-full">
           <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <AboutSection />
           </div>
         </section>
-        <section id="contact" className="py-20 bg-gray-50 flex justify-center w-full">
+        <section id="contact" className="py-12 sm:py-20 bg-gray-50 flex justify-center w-full">
           <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <ContactSection />
           </div>
         </section>
-        <section id="faq" className="py-20 bg-white flex justify-center w-full">
+        <section id="faq" className="py-12 sm:py-20 bg-white flex justify-center w-full">
           <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <FAQSection />
           </div>
