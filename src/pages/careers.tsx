@@ -6,7 +6,7 @@ export default function Careers() {
     <>
       <Navbar />
       <main>
-        <div className="responsive-container">
+        <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="heading-main font-bold mb-6">Careers</h1>
           <div className="max-w-2xl mx-auto p-6 bg-white rounded shadow">
             <h2 className="text-xl font-semibold mb-4">Join Our Team!</h2>

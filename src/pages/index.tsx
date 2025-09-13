@@ -69,27 +69,27 @@ export default function Home() {
           </div>
         </section>
         <section id="services" className="py-20 bg-white flex justify-center w-full">
-          <div className="responsive-container">
+          <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <ServicesSection />
           </div>
         </section>
         <section id="portfolio" className="py-20 bg-gray-50 flex justify-center w-full">
-          <div className="responsive-container">
+          <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <PortfolioSection />
           </div>
         </section>
         <section id="about" className="py-20 bg-white flex justify-center w-full">
-          <div className="responsive-container">
+          <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <AboutSection />
           </div>
         </section>
         <section id="contact" className="py-20 bg-gray-50 flex justify-center w-full">
-          <div className="responsive-container">
+          <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <ContactSection />
           </div>
         </section>
         <section id="faq" className="py-20 bg-white flex justify-center w-full">
-          <div className="responsive-container">
+          <div className="responsive-container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <FAQSection />
           </div>
         </section>

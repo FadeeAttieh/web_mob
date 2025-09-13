@@ -9,7 +9,7 @@ export default function Loading() {
       setProgress((prev) => {
         if (prev < 100) {
           frame = requestAnimationFrame(animate);
-          return prev + Math.random() * 2.5; // Smooth, non-linear increment
+          return Math.min(prev + Math.random() * 2.5, 100);
         }
         return 100;
       });
@@ -19,7 +19,7 @@ export default function Loading() {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 z-50">
       <div className="relative w-40 h-40 flex items-center justify-center">
         {/* Neon circular progress bar */}
         <svg width="160" height="160" viewBox="0 0 160 160">
@@ -57,7 +57,7 @@ export default function Loading() {
             filter="url(#glow)"
           />
         </svg>
-        <span className="absolute text-4xl font-bold text-blue-400 drop-shadow-lg animate-pulse">
+        <span className="absolute inset-0 flex items-center justify-center text-4xl font-bold text-blue-400 drop-shadow-lg animate-pulse">
           {Math.floor(progress)}%
         </span>
       </div>

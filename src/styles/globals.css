@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* Custom global styles */
+img {
+  max-width: none !important;
+  height: auto;
+}
 body {
   @apply bg-gray-50 text-gray-900 font-sans;
 }
@@ -31,6 +35,10 @@ input, textarea, select, button {
 ::-webkit-scrollbar-thumb {
   background: #d1d5db;
   border-radius: 4px;
+}
+
+img {
+  @apply max-w-none;
 }
 
 /* Add custom transitions for animated UI */
