@@ -1,11 +1,17 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import AboutSection from "../components/AboutSection";
 
 export default function About() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold mb-6">About Us</h1>
-      <AboutSection />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <div className="responsive-container">
+          <h1 className="heading-main font-bold mb-6">About Us</h1>
+          <AboutSection />
+        </div>
+      </main>
+    </>
   );
 }
